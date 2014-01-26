@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140107212609) do
+ActiveRecord::Schema.define(version: 20140126204554) do
+
+  create_table "game_types", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "games", force: true do |t|
+    t.integer  "game_type_id"
+    t.boolean  "complete"
+    t.text     "history"
+    t.text     "save_state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "games", ["game_type_id"], name: "index_games_on_game_type_id"
 
   create_table "users", force: true do |t|
     t.string   "username"

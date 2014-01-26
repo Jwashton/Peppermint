@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  game_type_id: 
+  complete: false
+  history: MyText
+  save_state: MyText
+
+two:
+  game_type_id: 
+  complete: false
+  history: MyText
+  save_state: MyText
