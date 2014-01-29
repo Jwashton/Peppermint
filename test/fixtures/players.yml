@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: shadoweyes
+  game_id: chess1
+
+two:
+  user_id: pk-nb
+  game_id: chess1
+
+three:
+  user_id: shadoweyes
+  game_id: checkers1
+
+four:
+  user_id: kyla
+  game_id: checkers1

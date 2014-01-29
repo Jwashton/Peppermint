@@ -1,7 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
+chess:
+  name: Chess
 
-two:
-  name: MyString
+checkers:
+  name: Checkers
+
+dominoes:
+  name: Dominoes

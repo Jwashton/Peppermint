@@ -1,7 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  username: MyString
+shadoweyes:
+  username: Shadoweyes
 
-two:
-  username: MyString
+pk-nb:
+  username: pk-nb
+
+kyla:
+  username: Kyla Bendrik
