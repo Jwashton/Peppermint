@@ -9,6 +9,9 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Grab bourbon
+gem 'compass-rails'
+
 # Use HAML for view files ...
 gem 'haml'
 gem 'haml-rails'
@@ -45,6 +48,14 @@ end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+# Live reload changes in browser
+group :development do
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-rails'
 end
 
 # Use ActiveModel has_secure_password
