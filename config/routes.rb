@@ -1,4 +1,13 @@
 Peppermint::Application.routes.draw do
+  # get "user/index"
+  # get "user/new"
+  # get "user/show"
+
+  # get 'user'=> 'user#index'
+
+  resources :user
+  root 'user#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +48,7 @@ Peppermint::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
