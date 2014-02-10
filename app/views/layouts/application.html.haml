@@ -10,9 +10,14 @@
 
 
   %body
-    #mainNav
-      %img
-      %h1 Peppermint
+    %header#mainHeader
+      #mainNav
+        = image_tag "logo.svg", :class => 'logo'
+        %h1 Peppermint
+        %ul
+          %li Nav 1
+          %li Nav 2
+          %li Nav 3
 
     %div{:id => "#{params[:controller].parameterize}Controller", :class => "mainContainer"}
       = yield

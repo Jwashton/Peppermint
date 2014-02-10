@@ -1,0 +1,68 @@
+@import "compass";
+@import "compass/reset";
+
+$midGray: #979797;
+$titleGray: #888888;
+$whiteColor: #ffffff;
+$darkTextColor: #443236;
+
+
+$paddingLeft: 1em;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(<%= asset_path 'stripe2.png' %>);
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  color: $darkTextColor;
+}
+
+header#mainHeader {
+  height: 3.75rem;
+  width: 100%;
+  padding-left: $paddingLeft;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: solid 1px $midGray;
+  display: table;
+}
+
+.mainContainer {
+  margin: 1em;
+  //max-width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 1px $midGray;
+  border-radius: 4px;
+  padding: 1em;
+
+}
+
+#mainNav {
+  margin: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#mainNav > * {
+  vertical-align: middle;
+  display: inline-block;
+  color: $midGray;
+}
+
+#mainNav .logo {
+  margin-right: 0.75em;
+}
+
+#mainNav h1 {
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.75rem;
+  color: $titleGray
+}
+
+#mainNav ul > li {
+  display: inline-block;
+  margin-left: 2em;
+  padding-top: 0.25em;
+}
