@@ -52,7 +52,7 @@ end
 
 # Live reload changes in browser
 group :development do
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'rb-fsevent', :group => :osx
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-rails'
