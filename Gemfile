@@ -43,6 +43,7 @@ gem 'jbuilder', '~> 1.2'
 # Testing Libraries
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
+  gem 'capybara'
 end
 
 group :doc do
