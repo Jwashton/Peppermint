@@ -44,20 +44,18 @@ gem 'jbuilder', '~> 1.2'
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'capybara'
-end
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
+  
 # Live reload changes in browser
-group :development do
   gem 'rb-fsevent', :group => :osx
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-rails'
   gem 'guard-rspec'
+end
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
 end
 
 # Use ActiveModel has_secure_password
