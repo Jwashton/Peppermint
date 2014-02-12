@@ -3,5 +3,5 @@ class User < ActiveRecord::Base
   #   username
   has_many :players
   
-  validates :username, presence: true
+  validates :username, presence: true, uniqueness: true
 end
