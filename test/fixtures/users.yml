@@ -1,10 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-shadoweyes:
-  username: Shadoweyes
+fred:
+  username: Fred
 
-pk-nb:
-  username: pk-nb
+dino:
+  username: Dino
 
-kyla:
-  username: Kyla Bendrik
+wilma:
+  username: Wilma
+
+pebbles:
+  username: Pebbles
