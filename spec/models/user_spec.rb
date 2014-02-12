@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe User do
   
-  let(:user) { user = User.new(username: "Barney") }
+  let(:user) { user = User.new(username: "Kevin") }
   
   describe "attributes" do
     
