@@ -51,6 +51,8 @@ group :test, :development do
   gem 'guard-livereload'
   gem 'guard-rails'
   gem 'guard-rspec'
+  
+  gem 'shoulda-matchers'
 end
 
 group :doc do
