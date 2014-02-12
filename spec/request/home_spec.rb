@@ -13,6 +13,14 @@ describe "Home Page" do
         expect(page.status_code).to be 200
       end
       
+      describe "header" do
+        
+        it "displays title" do
+          expect(page).to have_selector 'div#mainNav h1', text: 'Peppermint'
+        end
+        
+      end
+      
     end
     
   end
