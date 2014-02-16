@@ -27,8 +27,10 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-config/initializers/secret_token.rb
 config/secrets.yml
+
+# Ignore your dynamically generated secrec token
+.secret
 
 # Environment normalisation:
 /.bundle
