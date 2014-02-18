@@ -1,13 +1,26 @@
-// %h1 User#new
-// %p Find me in app/views/user/new.html.haml
-
 = form_tag do
-  %ul
-    %li
-      = label_tag(:username, "username")
-      = text_field_tag(:username)
-    %li
-      = label_tag(:password, "password")
-      = password_field_tag(:password)
-    %li
-      = submit_tag("Sign in")
+  = field_set_tag "Login" do
+    %ul
+      %li
+        = label_tag(:username, "username")
+        = text_field_tag(:username)
+      %li
+        = label_tag(:password, "password")
+        = password_field_tag(:password)
+      %li
+        = submit_tag("Sign in")
+
+= form_for @user do |f|
+  = field_set_tag "Register" do
+    %ul
+      %li
+        = f.label :username 
+        = f.text_field :username 
+      %li
+        = f.label :password
+        = f.password_field :password
+      %li
+        = f.label :password_confirm
+        = f.password_field :password_confirm
+      %li
+        = f.submit "Register"

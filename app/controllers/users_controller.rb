@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
     # if logged, render main
     # else sign up page
     #   Redirect to new
