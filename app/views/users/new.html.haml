@@ -2,13 +2,13 @@
   = field_set_tag "Login" do
     %ul
       %li
-        = label_tag(:username, "username")
-        = text_field_tag(:username)
+        = label_tag :username
+        = text_field_tag :username
       %li
-        = label_tag(:password, "password")
-        = password_field_tag(:password)
+        = label_tag :password
+        = password_field_tag :password
       %li
-        = submit_tag("Sign in")
+        = submit_tag "Sign in"
 
 = form_for @user do |f|
   = field_set_tag "Register" do
